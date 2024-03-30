@@ -1,0 +1,376 @@
+# Matrix Median
+
+[Programming](https://www.interviewbit.com/courses/programming)[Binary Search](https://www.interviewbit.com/courses/programming/topics/binary-search)
+
+Medium
+
+32.3% Success
+
+608
+
+29
+
+Bookmark
+
+Asked In:
+
+[](https://www.interviewbit.com/search/?q=Amazon)
+
+Problem Description
+
+Given a matrix of integers A of size N x M in which each row is sorted.
+
+Find and return the overall median of matrix A.
+
+NOTE: No extra memory is allowed.
+
+NOTE: Rows are numbered from top to bottom and columns are numbered from left to right.
+
+Problem Constraints
+
+1 <= N, M <= 10^5
+
+1 <= N*M <= 10^6
+
+1 <= A[i] <= 10^9
+
+N*M is odd
+
+Input Format
+
+The first and only argument given is the integer matrix A.
+
+Output Format
+
+Return the overall median of matrix A.
+
+Example Input
+
+Input 1:
+
+```
+A = [   [1, 3, 5],
+        [2, 6, 9],
+        [3, 6, 9]   ] 
+```
+
+Input 2:
+
+```
+A = [   [5, 17, 100]    ]
+```
+
+Example Output
+
+Output 1:
+
+```
+ 5 
+```
+
+Output 2:
+
+```
+ 17
+```
+
+Example Explanation
+
+Explanation 1:
+
+```
+A = [1, 2, 3, 3, 5, 6, 6, 9, 9]
+Median is 5. So, we return 5. 
+```
+
+Explanation 2:
+
+```
+Median is 17.
+```
+
+# Note:You only need to implement the given function. Do not read input, instead use the arguments to the function. Do not print the output, instead return values as specified. Still have a question? Checkout [Sample Codes](https://www.interviewbit.com/pages/sample_codes/) for more details.
+
+[540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+
+Medium
+
+9.8K
+
+152
+
+Companies
+
+# You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
+
+# Return *the single element that appears only once*.
+
+# Your solution must run in `O(log n)` time and `O(1)` space.
+
+# Example 1:
+
+# Input: nums = [1,1,2,3,3,4,4,8,8] Output: 2
+
+# Example 2:
+
+# Input: nums = [3,3,7,7,10,11,11] Output: 10
+
+# Constraints:
+
+- # `1 <= nums.length <= 10<sup>5</sup>`
+    
+- # `0 <= nums[i] <= 10<sup>5</sup>`
+    
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+    
+    Medium
+    
+    22.5K
+    
+    1.3K
+    
+    Companies
+    
+    There is an integer array `nums` sorted in ascending order (with distinct values).
+    
+    Prior to being passed to your function, `nums` is possibly rotated at an unknown pivot index `k` (`1 <= k < nums.length`) such that the resulting array is `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]` (0-indexed). For example, `[0,1,2,4,5,6,7]` might be rotated at pivot index `3` and become `[4,5,6,7,0,1,2]`.
+    
+    Given the array `nums` after the possible rotation and an integer `target`, return *the index of* `target` *if it is in* `nums`*, or* `-1` *if it is not in* `nums`.
+    
+    You must write an algorithm with `O(log n)` runtime complexity.
+    
+    Example 1:
+    
+    Input: nums = [4,5,6,7,0,1,2], target = 0
+    Output: 4
+    
+    Example 2:
+    
+    Input: nums = [4,5,6,7,0,1,2], target = 3
+    Output: -1
+    
+    Example 3:
+    
+    Input: nums = [1], target = 0
+    Output: -1
+    
+    [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+    
+    Hard
+    
+    24.7K
+    
+    2.7K
+    
+    Companies
+    
+    # Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
+    
+    # The overall run time complexity should be `O(log (m+n))`.
+    
+    # Example 1:
+    
+    # Input: nums1 = [1,3], nums2 = [2] Output: 2.00000 Explanation: merged array = [1,2,3] and median is 2.
+    
+    # Example 2:
+    
+    # Input: nums1 = [1,2], nums2 = [3,4] Output: 2.50000 Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+    
+    # Constraints:
+    
+    - # `nums1.length == m`
+        
+    - # `nums2.length == n`
+        
+    - # `0 <= m <= 1000`
+        
+    - # `0 <= n <= 1000`
+        
+    - # `1 <= m + n <= 2000`
+        
+    - # `-10<sup>6</sup> <= nums1[i], nums2[i] <= 10<sup>6</sup>`
+        
+    - ### K-th element of two sorted Arrays
+        
+        # MediumAccuracy: 37.4%Submissions: 176K+Points: 4
+        
+        Share your Interview, Campus or Work Experience to win GFG Swag Kits and much more!![](file:///home/mayanksinha/.config/joplin-desktop/resources/c38323f6bdcc41bcaf613ad79bad8ec5.configjoplindesktopt)
+        
+        [](https://www.geeksforgeeks.org/write-it-up-event-2023-share-your-experiences-on-geeksforgeeks/)
+        
+        Given two sorted arrays arr1 and arr2 of size N and M respectively and an element K. The task is to find the element that would be at the kth position of the final sorted array.
+        
+        Example 1:
+        
+        Input:
+        arr1[] = {2, 3, 6, 7, 9}
+        arr2[] = {1, 4, 8, 10}
+        k = 5
+        Output:
+        6
+        Explanation:
+        The final sorted array would be -
+        1, 2, 3, 4, 6, 7, 8, 9, 10
+        The 5th element of this array is 6. 
+        
+        Example 2:
+        
+        Input:
+        arr1[] = {100, 112, 256, 349, 770}
+        arr2[] = {72, 86, 113, 119, 265, 445, 892}
+        k = 7
+        Output:
+        256
+        Explanation:
+        Final sorted array is - 72, 86, 100, 112,
+        113, 119, 256, 265, 349, 445, 770, 892
+        7th element of this array is 256.
+        
+        Your Task:
+        You don't need to read input or print anything. Your task is to complete the function kthElement() which takes the arrays arr1[], arr2[], its size N and M respectively and an integer K as inputs and returns the element at the Kth position.
+        
+        Expected Time Complexity: O(Log(N) + Log(M))
+        Expected Auxiliary Space: O(Log (N))
+        
+        Constraints:
+        1 <= N, M <= 10<sup>6</sup>
+        0 <= arr1<sub>i</sub>, arr2<sub>i</sub> < INT_MAX
+        1 <= K <= N+M
+        
+        Allocate Books
+        
+        [Programming](https://www.interviewbit.com/courses/programming)[Binary Search](https://www.interviewbit.com/courses/programming/topics/binary-search)
+        
+        Medium
+        
+        25.2% Success
+        
+        808
+        
+        19
+        
+        Bookmark
+        
+        Asked In:
+        
+        [](https://www.interviewbit.com/search/?q=Google)[](https://www.interviewbit.com/search/?q=Flipkart)
+        
+        Problem Description
+        
+        Given an array of integers A of size N and an integer B.
+        
+        The College library has N books. The ith book has A[i] number of pages.
+        
+        You have to allocate books to B number of students so that the maximum number of pages allocated to a student is minimum.
+        
+        1.  A book will be allocated to exactly one student.
+        2.  Each student has to be allocated at least one book.
+        3.  Allotment should be in contiguous order, for example: A student cannot be allocated book 1 and book 3, skipping book 2.
+        
+        Calculate and return that minimum possible number.
+        
+        NOTE: Return -1 if a valid assignment is not possible.
+        
+        Problem Constraints
+        
+        1 <= N <= 10<sup>5</sup>
+        1 <= A[i], B <= 10<sup>5</sup>
+        
+        Input Format
+        
+        The first argument given is the integer array A. The second argument given is the integer B.
+        
+        Output Format
+        
+        Return that minimum possible number.
+        
+        Example Input
+        
+        Input 1:
+        
+        ```
+        A = [12, 34, 67, 90]
+        B = 2
+        ```
+        
+        Input 2:
+        
+        ```
+        A = [5, 17, 100, 11]
+        B = 4
+        ```
+        
+        Example Output
+        
+        Output 1:
+        
+        ```
+        113
+        ```
+        
+        Output 2:
+        
+        ```
+        100
+        ```
+        
+        Example Explanation
+        
+        Explanation 1:
+        
+        ```
+        There are two students. Books can be distributed in following fashion : 
+        1)  [12] and [34, 67, 90]
+            Max number of pages is allocated to student 2 with 34 + 67 + 90 = 191 pages
+        2)  [12, 34] and [67, 90]
+            Max number of pages is allocated to student 2 with 67 + 90 = 157 pages 
+        3)  [12, 34, 67] and [90]
+            Max number of pages is allocated to student 1 with 12 + 34 + 67 = 113 pages
+            Of the 3 cases, Option 3 has the minimum pages = 113.
+        ```
+        
+        Note:You only need to implement the given function. Do not read input, instead use the arguments to the function. Do not print the output, instead return values as specified. Still have a question? Checkout [Sample Codes](https://www.interviewbit.com/pages/sample_codes/) for more details.
+        
+        ## AGGRCOW - Aggressive cows
+        
+        [#binary-search](https://www.spoj.com/problems/tag/binary-search)
+        
+        Farmer John has built a new long barn, with N (2 <= N <= 100,000) stalls. The stalls are located along a straight line at positions x1 ... xN (0 <= xi <= 1,000,000,000).
+        His C (2 <= C <= N) cows don't like this barn layout and become aggressive towards each other once put into a stall. To prevent the cows from hurting each other, FJ wants to assign the cows to the stalls, such that the minimum distance between any two of them is as large as possible. What is the largest minimum distance?
+        
+        ### Input
+        
+        *t* – the number of test cases, then *t* test cases follows.
+        * Line 1: Two space-separated integers: N and C
+        * Lines 2..N+1: Line i+1 contains an integer stall location, xi
+        
+        ### Output
+        
+        For each test case output one integer: the largest minimum distance.
+        
+        ### Example
+        
+        Input:
+        
+        ```
+        1
+        5 3
+        1
+        2
+        8
+        4
+        9
+        
+        ```
+        
+        Output:
+        
+        ```
+        3
+        
+        ```
+        
+        Output details:
+        
+        FJ can put his 3 cows in the stalls at positions 1, 4 and 8,
+        resulting in a minimum distance of 3.
