@@ -11,7 +11,6 @@ using namespace std;
 typedef pair<int, int>  PII;
 typedef pair<LL, LL>    PLL;
 const int MOD = 1000000007;
-#define PI 3.1415926535897932384626
  
  
 set<LL> primeFactors(LL n) 
