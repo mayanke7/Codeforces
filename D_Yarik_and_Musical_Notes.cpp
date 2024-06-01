@@ -16,22 +16,29 @@ const int MOD = 1000000007;
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
     LL t;
     cin>>t;
     while(t--){
-        LL n, k;
-        cin>>n>>k;
+        LL n;
+        cin>>n;
         LL res=0;
-
-        if(k>=31) res= n+1;
-        else{
-            if(n<=((1<<k)-1)) res= n+1;
-            else res= (1<<k);
+        map<LL, LL> freq;
+        map<LL, LL> eqFreq;
+        vector<LL> arr(n);
+        for(LL i=0;i<n;i++) {
+            cin>>arr[i];
+            if((arr[i] & (arr[i]-1))==0){
+                LL key= log2(arr[i]) - arr[i];
+                res+= eqFreq[key];
+                eqFreq[key]++;
+            }else{
+                if(freq.count(arr[i])){
+                    res+= freq[arr[i]];
+                }
+                freq[arr[i]]++;
+            }
         }
-        
         cout<<res<<endl;
-        
     
     }
 }

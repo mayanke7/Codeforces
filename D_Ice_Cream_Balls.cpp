@@ -13,25 +13,32 @@ typedef pair<LL, LL>    PLL;
 const int MOD = 1000000007;
 #define PI 3.1415926535897932384626
 
+
+
+
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
     LL t;
     cin>>t;
     while(t--){
-        LL n, k;
-        cin>>n>>k;
-        LL res=0;
-
-        if(k>=31) res= n+1;
-        else{
-            if(n<=((1<<k)-1)) res= n+1;
-            else res= (1<<k);
+        LL n; cin>>n;
+        LL low= 1, high=n;
+        while(low<high){
+            LL mid= low + (high- low)/2;
+            if(mid* (mid+1) < 2*n){
+                low= mid+1;
+            }else high= mid;
         }
-        
-        cout<<res<<endl;
-        
+
+        LL w;
+        if(low&1){
+            w= (((low+1)/2)*low)-n;
+        }else{
+            w= ((low+1)*(low/2))-n;
+        }
+        cout<<2*low-w<<endl;
     
     }
 }

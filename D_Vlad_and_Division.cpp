@@ -19,16 +19,23 @@ int main(){
     LL t;
     cin>>t;
     while(t--){
-        int h,w,a,b,c,d;
-        cin>>h>>w>>a>>b>>c>>d;
+        int n;
+        cin>>n;
+        vector<int> arr(n);
+        map<int, int> freq;
+        int res=0;
+        for(int i=0;i<n;i++) {
+            cin>>arr[i];
+            int toggleNum= ((1 << 31) - 1) ^ arr[i];
+            if(freq.count(toggleNum) && freq[toggleNum]>0){
+                freq[toggleNum]--;
+                continue;
+            }
 
-        if(abs(a-c)&1){
-            //alice
-            
-        }else{
-            //bob
-
+            freq[arr[i]]++;
+            res++;
         }
+        cout<<res<<endl;
     
     }
 }
