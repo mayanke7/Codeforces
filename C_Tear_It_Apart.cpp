@@ -32,8 +32,8 @@ int main(){
     while(t--){
         string str; cin>>str;
         map<char, int> freq;
-         int ss= str.size();
-        vector<char> charWithMaxFreq={str[0]};
+        int ss= str.size();
+        char charWithMaxFreq=str[0];
         map<char, vector<int>> charIndexes;
         int maxFreq= 1;
         for(int i=0;i<ss;i++) {
@@ -41,17 +41,16 @@ int main(){
             charIndexes[c].push_back(i);
             freq[c]++;
             if(freq[c]> maxFreq){
-                charWithMaxFreq= {c};
+                charWithMaxFreq= c;
                 maxFreq= freq[c];
-            }else if(freq[c]== maxFreq){
-                charWithMaxFreq.push_back(c);
             }
         }
        
         int res=INT_MAX;
 
         if(maxFreq >1){
-            for(auto c: charWithMaxFreq){
+            for(auto charIndexCur: charIndexes){
+                char c= charIndexCur.first;
                 int curRes=0;
                 int noOfOccurences= charIndexes[c].size();
                 for(int i=0;i<noOfOccurences;i++){
